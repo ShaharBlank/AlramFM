@@ -185,9 +185,10 @@ app/src/main/java/com/example/alarmfm/model/RadioStation.kt
 ```
 
 The current URLs use these official CDNs:
-- **Kan stations** (Bet, Gimel, 88) → `kanliveicy.media.kan.org.il`
+- **Kan stations** (Bet, Gimel, 88) → `live.streamtheworld.com`
 - **Galei Tzahal / Galgalatz** → `glzwizzlv.bynetcdn.com`
-- **103FM / Radius / Radio Haifa** → `cdn.cybercdn.live`
+- **103FM / Radius** → `cdn.cybercdn.live`
+- **Radio Haifa** → `radiohaifa.co.il`
 - **102FM** → `102.livecdn.biz`
 
 ---
