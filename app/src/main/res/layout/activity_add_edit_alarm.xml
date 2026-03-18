@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <!-- TIME PICKER -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:timePickerMode="clock" />
+
+        <!-- LABEL -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label"
+            android:layout_marginTop="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- REPEAT DAYS -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Repeat" android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="8dp">
+            <CheckBox android:id="@+id/cbMon" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="M" />
+            <CheckBox android:id="@+id/cbTue" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="T" />
+            <CheckBox android:id="@+id/cbWed" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="W" />
+            <CheckBox android:id="@+id/cbThu" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="T" />
+            <CheckBox android:id="@+id/cbFri" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="F" />
+            <CheckBox android:id="@+id/cbSat" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="S" />
+            <CheckBox android:id="@+id/cbSun" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="S" />
+        </LinearLayout>
+
+        <!-- RADIO STATION -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Radio Station" android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:layout_marginTop="20dp" />
+        <Spinner android:id="@+id/spinnerStation"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+        <!-- FALLBACK SOUND -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Fallback Sound (if radio unavailable)"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginTop="20dp" />
+        <Spinner android:id="@+id/spinnerFallback"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPreviewFallback"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Preview sound" android:layout_marginTop="4dp" />
+
+        <!-- VIBRATE -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchVibrate"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Vibrate" android:checked="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- SAVE BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Save" android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

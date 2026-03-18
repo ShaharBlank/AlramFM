@@ -1,0 +1,60 @@
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Gradle
+.gradle/
+build/
+**/build/
+gradle-wrapper.jar
+
+# Local configuration (contains machine-specific SDK paths)
+local.properties
+
+# Keystore & signing (NEVER commit these)
+*.jks
+*.keystore
+*.p12
+*.pfx
+keystore.properties
+release/
+
+# Generated files
+**/R.java
+**/BuildConfig.java
+**/generated/
+
+# NDK / CMake
+.externalNativeBuild/
+.cxx/
+
+# Kotlin / Java compiled output
+**/*.class
+out/
+
+# Navigation editor temporary files
+.navigation/
+
+# Logs & crash reports
+*.log
+*.hprof
+captures/
+
+# Test results
+**/test-results/
+**/androidTest-results/
+**/outputs/
+
+# Profiling
+*.trace
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Google Services (keep if you want, remove if contains secrets)
+google-services.json
